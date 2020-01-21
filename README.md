@@ -1,4 +1,8 @@
-# MyApp
+# Tasks
+
+Introdução ao desenvolvimento com Angular, criação de um Task List
+
+## Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 

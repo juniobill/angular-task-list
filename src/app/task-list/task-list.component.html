@@ -1,0 +1,25 @@
+<h3>Lista</h3>
+
+<ul>
+  <li
+   *ngFor="let item of tasks"
+   [myTask]="item" >
+   {{ item.name | uppercase}} <br>
+   {{ item.value | formatCurrency:'en-US':'USD'}}  <br>
+   {{ item.value | formatCurrency}} <br>
+   {{ item.date_launch | formatDate }} <br>
+  </li>
+</ul>
+
+<!--
+<p myTask></p>
+
+
+   myTask="{{item.name}}"
+
+   id="list-{{item.name}}"
+   [ngClass]="{'item-green': item.value>5, 'item-red': item.value<5}"
+
+   [style.color]="item.value > 5  ? 'red' : 'green'"
+   [innerHTML]="(item.name | uppercase) + ' - ' + item.value"
+-->
